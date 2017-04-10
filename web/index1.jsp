@@ -1,6 +1,6 @@
 <%@ page import="Servlets.QHandler" %><%--
   Created by IntelliJ IDEA.
-  User: Denis
+  User: Павел
   Date: 12.09.2016
   Time: 16:03
   To change this template use File | Settings | File Templates.

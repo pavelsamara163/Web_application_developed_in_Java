@@ -1,17 +1,12 @@
 package Servlets;
 
 import Classes.Situation;
-import Databases.DBproccessor;
-import Databases.Product;
-
 
 import java.io.IOException;
-import java.sql.*;
+import java.sql.SQLException;
 
 
-/**
- * Created by Denis on 12.09.2016.
- */
+
 public class QHandler extends javax.servlet.http.HttpServlet {
 
     static String question;
