@@ -1,0 +1,266 @@
+
+*{
+	margin: 0; padding: 0;
+
+}
+
+@font-face {
+    font-family: 'shrift'; src:url('../10146.otf');
+}
+@font-face {
+    font-family: 'OtvetShift'; src:url('../9924.ttf');
+}
+#ship{/*Фон корабля*/
+    /*opacity: 0.3;*/
+    z-index:1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-image: url(../img/vid.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#ship1{
+    /*opacity: 0.3;*/
+    z-index:2;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-image: url(../img/vidOtvet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#particles-js {
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  background-image: url(../img/3234.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  
+}
+.page-wrapper{
+    display:none;
+    top:-50px;
+    left: 20px;
+    max-width:700px;
+    position:relative;
+    background-image:url(../img/fon1.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: 150%;
+    height: auto;
+    margin:0 auto;
+    padding:25px;
+    min-height:600px;
+    /*box-shadow:3px 3px 7px black;
+    border-left:1px solid #333;
+    border-right:1px solid #333;*/
+}
+.page-wrapper1{
+    display:none;
+    text-align: center;
+    top:-50px;
+    left: 20px;
+    max-width:700px;
+    position:relative;
+    background-image:url(../img/fon23.png);
+    background-position:center;
+    background-size: 150%;
+    height: auto;
+    margin:0 auto;
+    padding:25px;
+    min-height:600px;
+
+	/*box-shadow:3px 3px 7px black;
+	border-left:1px solid #333;
+	border-right:1px solid #333;*/
+}
+#priv{/*Приветствие*/
+    display: block;
+    font-family: shrift;
+    font-size: 11px;
+    position: relative;
+    top:-125px;
+    left:26px;
+    color: #0142DC;
+    text-shadow: 0 -1px rgba(0,0,0,.1);
+    text-decoration: none;
+    user-select: none;
+    outline: none;
+    border: none;
+    -webkit-animation: pulsate 1.2s linear infinite;
+    animation: pulsate 1.2s linear infinite;
+
+}
+.qest{ /*вывод ответа*/
+
+    font-family: OtvetShift;
+    font-size: 22px;
+    color: red;
+    text-shadow: 0 -1px rgba(0,0,0,.1);
+    text-decoration: none;
+    user-select: none;
+    outline: none;
+    border: none;
+    -webkit-animation: pulsate 1.2s linear infinite;
+    animation: pulsate 1.2s linear infinite;
+    max-width:60%;
+    min-height:60%;
+	position:relative;
+	left:-25px;
+	top:-150px;
+	z-index:1;
+
+}
+
+
+
+
+.vopros{/*Квадрат с вопросом*/
+    display: none;
+    opacity: 0.9;
+	z-index:33;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top:50%;
+	left:60%;
+	background-size: 30%;
+	background-image: url(../img/qest8.png);
+	background-repeat: no-repeat;
+
+}
+#vpr{
+    z-index:33;
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top:57%;
+    left:25%;
+
+    background-repeat: no-repeat;
+
+
+
+    font-family: shrift;
+    font-size: 10px;
+    color: #489FEE;
+    text-shadow: 0 -1px #489FEE;
+    text-decoration: none;
+    user-select: none;
+    outline: none;
+    border: none;
+    -webkit-animation: pulsate 1.2s linear infinite;
+    animation: pulsate 1.2s linear infinite;
+
+}
+
+.imgQest{/*Облачко с вопросом*/
+    display: none;
+	max-width:400px;
+	position:relative;
+    top:0px;
+	left:300px;
+	height: auto;
+	margin:0 auto;
+	padding:25px;
+	min-height:300px;
+
+
+}
+.imgQest>img{
+    max-width:100%;
+    height:auto;
+}
+.imgOtvet{/*Вывод облачка с ответом*/
+    display: none;
+    position:absolute;
+    top:20px;
+    left:-240px;
+    min-height: 10px;
+    max-width: 80%;
+    padding:25px;
+}
+.imgOtvet>img{
+    max-width:90%;
+    height:auto;
+}
+
+
+
+#but1{/*Кнопка ответа*/
+    z-index: 33;
+    position: fixed;
+    margin: 10px auto;
+    width: auto;
+    height: auto;
+    top:70%;
+    left:71%;
+    color: #1BFFD4;
+    text-shadow: 0 -1px #1BFFD4;
+    text-decoration: none;
+    user-select: none;
+    padding: .3em 1em;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: #005CFE linear-gradient(#005CFE, #005CFE);
+    box-shadow: inset #005CFE 0 -1px 1px, inset 0 1px 1px #005CFE, #005CFE 0 0 0 1px,#005CFE 0 2px 5px;
+    -webkit-animation: pulsate 1.2s linear infinite;
+    animation: pulsate 1.2s linear infinite;
+}
+
+#but1:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+#but:active{
+    top: 1px;
+    color: #fff;
+    text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;
+    box-shadow: 0 -1px 3px rgba(0,0,0,.3), 0 1px 1px #fff, inset 0 1px 2px rgba(0,0,0,.8), inset 0 -1px 0 rgba(0,0,0,.05);
+}
+
+@-webkit-keyframes pulsate {
+    50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+}
+@keyframes pulsate {
+    50% {color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff;}
+}
+
+input{
+    padding: 5px;
+    font-size: 15px;
+    text-shadow: 0px 1px 0px #fff;
+    outline: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(#bcbcbe), to(#ffffff));
+    background: -moz-linear-gradient(top,  #bcbcbe,  #ffffff);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #717171;
+    -webkit-box-shadow: 1px 1px 0px #efefef;
+    -moz-box-shadow: 1px 1px 0px #efefef;
+    box-shadow:  1px 1px 0px #efefef;
+}
+
+input:focus {
+    -webkit-box-shadow: 0px 0px 15px red;
+    -moz-box-shadow: 0px 0px 15px red;
+    box-shadow: 0px 0px 15px red;
+}
+
